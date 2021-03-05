@@ -21,7 +21,7 @@ const useForm = (callback, validate) => {
     setIsSubmitting(true);
 // send the username and password to the server
 const response = await axios.post(
-  "http://localhost:3001/api/users/login",
+  "http://localhost:3001/user/login",
   user
 );
 // set the state of the user
@@ -44,7 +44,9 @@ useEffect(() => {
     event.persist();
     setValues(values => ({ ...values, [event.target.name]: event.target.value }));
   };
-
+  // vider le input
+  setEmail='';
+  setPassword= '';
   return {
     handleChange,
     handleSubmit,
@@ -54,3 +56,6 @@ useEffect(() => {
 };
 
 export default useForm;
+
+
+//////////////////////////////////////////////////////////////////////
