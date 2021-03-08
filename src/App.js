@@ -9,6 +9,7 @@ import SignUp from "./Components/Header/SignUp/SignUp";
 import LogIn from "./Components/Header/LogIn/LogIn";
 import Wishlist from "./Components/Header/Wishlist/Wishlist";
 import SearchBar from "./Components/Header/SearchBar/SearchBar";
+import AjoutRecette from "./Components/AjouterRecette/AjoutRecette";
 
 
 
@@ -32,6 +33,7 @@ function App() {
       <li className="nav-item nav-link active "> <Link to="/SignUp">SignUp</Link></li>
       <li className="nav-item nav-link active"> <Link to="/LogIn">LogIn</Link></li>
       <li className="nav-item nav-link active"> <Link to="/SearchBar">Recherche</Link></li>
+      <li className="nav-item nav-link active"> <Link to="/AjoutRecette">ajoute recette</Link></li>
        
     
    
@@ -45,6 +47,7 @@ function App() {
           <Route path="/Wishlist" render={() => <Wishlist />} />
           <Route path="/SignUp" render={() => <SignUp />} />
           <Route path="/LogIn" render={() => <LogIn />} />
+          <Route path="/AjoutRecette" render={() => <AjoutRecette />} />
     
           <Route path="/SearchBar" render={() => <SearchBar/>} />
           <Route path="/" exact={true} render={() => <Accueil />} />

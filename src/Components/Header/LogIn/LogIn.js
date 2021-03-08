@@ -1,4 +1,4 @@
-// import React, { useReducer, useEffect, useRef } from 'react';
+//  import React, { useReducer, useEffect, useRef } from 'react';
 // import { verifyLogin } from './utils';
 
 // const initialState = {
@@ -127,7 +127,7 @@
 //       </div>
 //     </div>
 //   );
-// }
+//  }
 // /////////////////////////////////////////////////////////////////////////////////////////////**
 
 // /////////////////////////////////////////////////////////////////
@@ -185,8 +185,8 @@ function LogIn(props) {
         props.history.push('/Accueil');
     }
     const redirectToRegister = () => {
-        props.history.push('/signup'); 
-        props.updateTitle('Register');
+        props.history.push('/SignUp'); 
+        props.updateTitle('SignUp');
     }
     return(
         <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
@@ -234,55 +234,4 @@ function LogIn(props) {
 
  export default withRouter(LogIn);
 //  ////////////////////////////////////////////////////////////////
-// import React from 'react';
-// import useForm from "./useForm";
-// import validate from './validate';
 
-//   function LogIn() {
-//     console.log('No errors, submit callback called!');
-    
-
-//     const {
-//       values,
-//       errors,
-//       handleChange,
-//       handleSubmit,
-//     } = useForm(LogIn, validate);
-  
-
-
-
-//   return (
-//     <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
-//       <h1>LogIn Form</h1>
-//             <form onSubmit={handleSubmit} noValidate>
-//             <div className="form-group text-left">
-//                 <label className="label">Email Address</label>
-//                 <div className="form-control">
-//                   <input autoComplete="off" className={`input ${errors.email && 'is-danger'} `}
-//                        type="email" name="email" onChange={handleChange}
-//                         value={values.email || ''} required />
-//                   {errors.email && (
-//                     <p className="help is-danger">{errors.email}</p>
-//                   )}
-//                 </div>
-//          </div>
-//                 <div className="form-group text-left">
-//                 <label className="label">Password</label>
-//                 <div className="form-control">
-//                   <input className={`input ${errors.password && 'is-danger'}`} type="password" name="password" onChange={handleChange} value={values.password || ''} required />
-             
-//                 {errors.password && (
-//                   <p className="help is-danger">{errors.password}</p>
-//                 )}
-//               </div>
-//               </div>
-//               <button type="submit" className="button is-block is-info is-fullwidth">Login</button>
-//             </form>
-//           </div>
-     
-   
-//   );
-// };
-
-// export default LogIn;
