@@ -1,5 +1,6 @@
 import React from "react";
 import style from './recette.module.css';
+import '../../../App.css'
 
 export default function Recipe({ title, calories, image, ingredients }) {
   return (

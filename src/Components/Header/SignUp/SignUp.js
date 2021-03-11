@@ -28,8 +28,6 @@ function SignUp() {
       };
 
        await axios.post("http://localhost:3001/user/signup", registerData);
-    
-     
      // await getLoggedIn();
       history.push("/");
     } catch (err) {
@@ -39,7 +37,6 @@ function SignUp() {
 
   return (
     <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
-      <h1>Registration Form</h1>
       <form onSubmit={register}>
       <div className="form-group text-left">
       <label >Nom</label>
@@ -90,11 +87,7 @@ function SignUp() {
         />
         </div>
      
-        <button type="submit" className="btn btn-primary">Register</button>
-        {/* <div className="mt-2">                 <span>Already have an account? </span>
-               <span className="loginText" onClick={() => redirectToLogin()}>Login here</span> 
-             </div>
-             */}
+        <button type="submit" className="btn btn-primary ">Register</button>
       </form>
     </div>
   );
